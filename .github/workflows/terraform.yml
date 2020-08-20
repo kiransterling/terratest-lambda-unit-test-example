@@ -45,7 +45,7 @@ jobs:
         EOF
       
     # Run testing on the code
-    - name: Run testing
+    - name: Run test
       run: cd test && sudo go test -v -timeout 15m -run TestHelloWorldAppUnit
     
     - name: Clean up
